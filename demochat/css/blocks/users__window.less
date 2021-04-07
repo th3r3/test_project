@@ -1,0 +1,44 @@
+//main: ../style.less
+
+.users__window {
+    height: 4.7058rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    // width: 100%;
+}
+
+.users__window::before {
+    content : "";
+    position: absolute;
+    left    : 3.1764rem;
+    bottom  : 0;
+    height  : 1px;
+    // width   : 21.8235rem;
+    border-bottom: 0.4px solid fade(#3C3C43, 29);
+}
+
+.users__info {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.users__photo {
+    padding:0  0.5882rem 0;
+}
+
+.users__name {
+    font-weight: 500;
+    color: #000;
+
+}
+
+.users__status {
+    font-size: 0.882rem;
+    color: fade(#3C3C43, 60);
+}
+

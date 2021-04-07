@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.gray__part {
+    background-color: #F7F7F7;
+    padding:0 1.1764rem 0;
+    border-bottom: 0.5px solid fade(#3C3C43, 35S);
+
+}
+
+
+.users__title {
+    font-weight: 500;
+    text-align: center;
+    padding: 1.175rem 0 0.8235rem;
+}
+
+.users__search {
+    position: relative;
+    display: flex;
+    width: 84.88%;
+    // min-width: 100px;
+
+}
+.search__icon {
+    display: block;
+    position: absolute;
+    top: 0.7333rem;
+    left: 26px;
+
+
+}
+
+.search__bar {
+    border: none;
+    border-radius: 1.294rem;
+    height: 36px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: 0;
+    background-color: fade(#3C3C43, 7);
+    padding-left: 3.235rem;
+    flex-grow: 5;
+}
+
+.search__line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.add_user {
+    flex-grow: 1;
+    width: 24px;
+}
+
+.users__isactive {
+    padding: 0.0588rem 0.647rem 0.1176rem;
+    font-size: 0.7647rem;
+    color: @green;
+    border: solid @green 1px;
+    border-radius: 0.2941rem;
+    margin-right: 0.8823rem;
+
+}
+
+.users__isblocked {
+    padding: 0.0588rem 0.647rem 0.1176rem;
+    font-size: 0.7647rem;
+    color: @red;
+    border: solid @red 1px;
+    border-radius: 0.2941rem;
+    margin-right: 0.8823rem;
+
+}
+
+.users__window.active, &.users__window:hover {
+    background-color: @blue;
+    .users__isactive, .users__isblocked {
+        border: solid white 1px;
+        color: white;
+    }
+    .users__name, .users__status {
+        color: white;
+    }
+}

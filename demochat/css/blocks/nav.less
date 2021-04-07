@@ -1,0 +1,39 @@
+// main: ../style.less
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16.442rem;
+}
+
+.nav__link {
+    color: rgba(@light-gray, 50%);
+    text-decoration: none;
+    mix-blend-mode: screen;
+    font-weight: 400;
+    margin-bottom: 4.01rem;
+    display: flex;
+    flex-direction: row;
+    height: 2.01rem;
+    padding-left: 1.6117rem;
+    &:hover, &.active {
+        border-left: white 4px solid;
+        color:white;
+        font-weight: 600;
+        .nav__photo {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+.nav__photo {
+    margin-right: 1.664rem;
+    opacity: 50%;
+}
+
+.nav__text {
+    line-height: 2rem;
+}
